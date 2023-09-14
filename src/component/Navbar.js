@@ -14,7 +14,7 @@ function Navbar() {
         <div className="contact">
           <Link to={"/Contact"}>Contact Us</Link>
         </div>
-      </div>
+      </div> 
     </>
   );
 }

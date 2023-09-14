@@ -24,31 +24,31 @@ function Student(){
                         <td><Link to={"/Form/Forms"}>Edit</Link></td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>26</td>
+                        <td>Ayush</td>
+                        <td>21</td>
                         <td>MERN</td>
-                        <td>October</td>
+                        <td>November</td>
                         <td><Link to={"/Form/Forms"}>Edit</Link></td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>26</td>
+                        <td>Ankit</td>
+                        <td>25</td>
                         <td>MERN</td>
-                        <td>October</td>
+                        <td>December</td>
                         <td><Link to={"/Form/Forms"}>Edit</Link></td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>26</td>
+                        <td>Bhanupriya</td>
+                        <td>23</td>
                         <td>MERN</td>
-                        <td>October</td>
+                        <td>September</td>
                         <td><Link to={"/Form/Forms"}>Edit</Link></td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>26</td>
+                        <td>Srishti</td>
+                        <td>22</td>
                         <td>MERN</td>
-                        <td>October</td>
+                        <td>April</td>
                         <td><Link to={"/Form/Forms"}>Edit</Link></td>
                     </tr>
                 </table>

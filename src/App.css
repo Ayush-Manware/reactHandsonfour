@@ -94,6 +94,6 @@ table{
   backdrop-filter: blur(10px);
   background-color: transparent;
   margin: 4vw auto;
-  border-collapse: collapse;
+  border-collapse: collapse
 }
 
