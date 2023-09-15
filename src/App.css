@@ -37,7 +37,7 @@
   }
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-evenly;
   font-size: 2vw;
@@ -46,31 +46,31 @@
   padding: 2vw;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: whitesmoke;
-  padding: 1vw;  
+  padding: 1vw;
   transition: all 0.2s linear;
 }
 
-a:focus{
+a:focus {
   border-bottom: 4px solid red;
 }
 
-.studentMainContainer{
+.studentContainer {
   padding: 2vw;
 }
 
-body{
-    height: 100vh;
+body {
+  height: 100vh;
 }
 
-.StudentDetail{
+.StudentDetail {
   font-size: 4vw;
   color: rgb(25, 25, 25);
 }
 
-.addStudent{
+.addStudent {
   float: right;
   background-color: pink;
   font-weight: bolder;
@@ -82,18 +82,51 @@ body{
   border-radius: 50%;
 }
 
-tr,th,td{
+tr,
+th,
+td {
   border-bottom: 1px solid rgb(74, 74, 74);
   text-align: center;
   padding: 1vw 0vw;
 }
 
-table{
+table {
   width: 100%;
   border: 1px solid gray;
   backdrop-filter: blur(10px);
   background-color: transparent;
   margin: 4vw auto;
-  border-collapse: collapse
+  border-collapse: collapse;
 }
 
+.formContainer {
+  width: 60vw;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  margin: 10vh auto;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.336),rgba(0, 0, 255, 0.686));
+  padding: 2vw;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: block;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.buttonDiv {
+}
+
+button {
+  margin: 5px auto;
+  display: block;
+  background-color: antiquewhite;
+  width: 20vw;
+  border: 1px solid gray; 
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}

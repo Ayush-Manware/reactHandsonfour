@@ -1,6 +1,9 @@
 import React from "react";
 
 function Form() {
+
+ 
+ 
   return (
     <>
       <div className="formContainer">
@@ -13,31 +16,34 @@ function Form() {
         />
 
         <input
-          type="text"
-          id="name"
-          name="name" //Vvalue={}
-          placeholder="Name*"
-          className="nameInput"
-        />
-<br /><br />
-        <input
-          type="text"
-          id="name"
-          name="name" //Vvalue={}
-          placeholder="Name*"
-          className="nameInput"
+          type="number"
+          id="age"
+          name="age" //Vvalue={}
+          placeholder="Age*"
+          className="ageInput"
         />
 
         <input
           type="text"
-          id="name"
-          name="name" //Vvalue={}
-          placeholder="Name*"
-          className="nameInput"
+          id="course"
+          name="course" //Vvalue={}
+          placeholder="Course*"
+          className="courseInput"
         />
-    <br /><br />
-        <button className="cancelBtn">Cancel</button>
-        <button type="submit">Submit</button>
+
+        <input
+          type="text"
+          id="batch"
+          name="batch" //Vvalue={}
+          placeholder="Batch*"
+          className="batchInput"
+        />
+        <br />
+        <br />
+        <div className="buttonDiv">
+          <button className="cancelBtn">Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
       </div>
     </>
   );
