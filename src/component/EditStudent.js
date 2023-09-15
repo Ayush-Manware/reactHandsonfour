@@ -1,52 +1,52 @@
-import React from "react";
+import React from 'react'
 
-function Form() {
-
- 
- 
+const EditStudent = () => {
   return (
     <>
-      <div className="formContainer">
+   <div className="formContainer">
+        <h1 className="addStudentText">Edit Details</h1>
+        <label htmlFor="name">Name :</label> <br />
         <input
           type="text"
           id="name"
           name="name" //Vvalue={}
-          placeholder="Name*"
+        //   placeholder="Name*"
           className="nameInput"
-        />
-
+        />{" "}
+        <br />
+        <label htmlFor="age">Age :</label> <br />
         <input
           type="number"
           id="age"
           name="age" //Vvalue={}
-          placeholder="Age*"
+        //   placeholder="Age*"
           className="ageInput"
         />
-
+        <label htmlFor="course">Course :</label> <br />
         <input
           type="text"
           id="course"
           name="course" //Vvalue={}
-          placeholder="Course*"
+        //   placeholder="Course*"
           className="courseInput"
         />
-
+        <label htmlFor="batch">Batch :</label> <br />
         <input
           type="text"
           id="batch"
           name="batch" //Vvalue={}
-          placeholder="Batch*"
+        //   placeholder="Batch*"
           className="batchInput"
         />
         <br />
         <br />
         <div className="buttonDiv">
           <button className="cancelBtn">Cancel</button>
-          <button type="submit">Submit</button>
+          <button className="addBtn" type="submit">Submit</button>
         </div>
       </div>
-    </>
-  );
+  </>
+  )
 }
 
-export default Form;
+export default EditStudent

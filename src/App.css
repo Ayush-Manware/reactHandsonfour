@@ -1,49 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lilita+One&family=Merriweather&family=Montserrat:wght@100;200&family=Pacifico&family=Playfair+Display:wght@500&family=Tilt+Prism&family=Ysabeau+Infant&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .navbar {
   display: flex;
   justify-content: space-evenly;
   font-size: 2vw;
-  background-color: rgb(254, 125, 125);
+  background-color: #F39F5A;
   font-weight: bold;
   padding: 2vw;
+  position: sticky;
+  top: 0px;
+}
+
+a{
+  text-decoration: none;
 }
 
 .navbar a {
@@ -54,11 +31,8 @@
 }
 
 a:focus {
-  border-bottom: 4px solid red;
-}
-
-.studentContainer {
-  padding: 2vw;
+  border-bottom: 2px solid #662949;
+  color: #662949;
 }
 
 body {
@@ -72,14 +46,24 @@ body {
 
 .addStudent {
   float: right;
-  background-color: pink;
+  background-color: #F39F5A;
   font-weight: bolder;
-  color: white;
   padding: 1vw;
   font-size: 1.5vw;
   border: 1px solid pink;
   width: 4vw;
   border-radius: 50%;
+  transition: all 0.1s linear;
+}
+
+.addStudent{
+  color: white;
+}
+
+.addStudent:hover{
+  background-color: #AE445A;
+  border-color: transparent;
+  scale:1.1;
 }
 
 tr,
@@ -91,7 +75,7 @@ td {
 }
 
 table {
-  width: 100%;
+  width: 90%;
   border: 1px solid gray;
   backdrop-filter: blur(10px);
   background-color: transparent;
@@ -100,33 +84,84 @@ table {
 }
 
 .formContainer {
-  width: 60vw;
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
+  width: 30vw;
+  border: 1px solid gray;
   margin: 10vh auto;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.336),rgba(0, 0, 255, 0.686));
   padding: 2vw;
+  border-radius: 10px;
 }
 
-input {
+.formContainer input {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid gray;
-  display: block;
-  justify-content: center;
   margin: 10px auto;
+  width:98%;
 }
 
-.buttonDiv {
+.formContainer label ,.formContainer input{
+  font-size: 1.3vw;
 }
 
-button {
-  margin: 5px auto;
-  display: block;
-  background-color: antiquewhite;
-  width: 20vw;
-  border: 1px solid gray; 
+input{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+input:active{
+  border-color: transparent;
+  border-bottom: 1px solid gray;
+}
+
+label{
+  font-family: 'Pacifico', cursive;
+}
+
+.buttonDiv{
+  display: flex;
+  justify-content: space-between;
   padding: 5px;
-  font-weight: bold;
+}
+
+.cancelBtn , .addBtn{
+  border: 1px solid transparent;
+  background-color: #662949;
+  color: white;
   border-radius: 5px;
+  width: 45%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  font-size: 1vw;
+  transition: all 0.1s linear;
+}
+
+.cancelBtn:hover , .addBtn:hover{
+  background-color: transparent;
+  color: #662949;
+  border-color: #662949;
+}
+
+.studentMainContainer {
+  padding: 2vw;
+}
+
+.homeContainer{
+  padding: 2vw;
+}
+
+.contactContainer{
+  padding: 2vw;
+}
+
+.addStudentText {
+  color: rgba(0, 0, 0, 0.488);
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #662949;
+  padding: 4px 10px;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-family: 'Tilt Prism', cursive;
 }

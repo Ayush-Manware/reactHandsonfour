@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import StoreFunction from "../Data/Store";
+import StoreFunction from "../Store/Store";
 
 function Navbar() {
 
