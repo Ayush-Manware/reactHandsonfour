@@ -30,7 +30,7 @@ export const NewStudent = () => {
           // placeholder="Course*"
           className="courseInput"
         />
-        <label htmlFor="batch">Batch :</label> <br />
+        <label htmlFor="batch">Batch</label> <br />
         <input
           type="text"
           id="batch"
